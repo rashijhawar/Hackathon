@@ -37,15 +37,7 @@ app.post('/', function(req, res) {
         console.log(endlat);
         console.log(endlng);
     });
-
-    request('http://open.mapquestapi.com/geocoding/v1/address?key=3RPKDErBGRFQ7bnjN2Pl0YSYGQ61iWnw&location=start', 
-    function(error, res, body) {
-        console.log(res.body);
-        //console.log(res.json.results[0].locations[0].displayLatLng.lat);
-        //console.log(res.body.results[0].locations[0].displayLatLng.lng);
-    });
- });
-
+});
 
 const PORT = process.env.PORT || 5000;
 
